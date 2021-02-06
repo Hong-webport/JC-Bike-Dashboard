@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JC Bike Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+<!-- <div class= "row"> -->
+    <div class='tableauPlaceholder' id='viz1612583272224' style='position: relative'><noscript>
+    <a href='#'>
+        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityBikeHWforBootcamp&#47;JCDashboard&#47;1_rss.png' style='border: none' />
+    </a>
+</noscript>
+<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+     <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CityBikeHWforBootcamp&#47;JCDashboard' />
+     <param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityBikeHWforBootcamp&#47;JCDashboard&#47;1.png' /> 
+     <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+     <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' />
+    </object>
+<!-- </div>                 -->
+</div>                
+<div class="card-body">
+    <h5 class="card-title">Analysis
+    </h5>
+    <br>
+    <div class  ="container">
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="card-text">
+           <b> Phenomenas to be explained.</b> 
+<br><br>
+            During the month of September in the year 2020:
+            <br>
+
+            
+            -How does Age Distributions fared in the city station, does particular stations attract different age groups? <br>
+
+            -Could the reason of short trips (1-5 mins) came from new customers' experiments with cycling? <br>
+
+            -Which is the station or area in which most trips started or ended?<br>
+
+            -Since different stations may attract different age groups, what are the common tripduration?<br>
+
+            
+            Getting a dash board that can answer different other answers.<br>
+            <br>
+
+            <b>  Using the filter: </b>
+            
+            The Dashboard is designed to look at details, not the overview.<br>
+            It was made so that the information from each station can be inferrred with a click.<br>
+            The Gantt bar will tell the info based on the age-range and whether a station had more popularity with a certain age group.<br>
+            The dots describe how many bikes are used in that months for durations of the trips.<br>
+            <br>
+            
+          <b>  Discoveries:</b>
+            
+            By visual inspection<br>
+            
+            <br> 1. Most trips do not reach over 1hr15mins mark.
+            
+            <br> 2. There is a unusual high amount of trips from those born from the year 1969. Could it be that it is default age for the app input, and people just too lazy to change? In that case data for age range of "consumer" may be highly faulty.
+            
+            <br> 3. Trips that came from start stations are highly clustered together. But End Stations are slighly more disperse. There are favorite areas for starting a bike ride but not for ending ones.
+            
+            <br> 4. Trips from some stations are overwheminly likely to end in that station (Liberty Light Rail, City Hall, Morris). But it is not always the case (Jakeson Square, ..etc). Further investigation (ground floor) might yeild answer. 
+            
+            <br> 5. Using the line chart, more trips of the subscribers are from the age born of 1980-1995.
+            
+            <br> 6. The people born in 1980, 1995, 2000 had a higher average trip duration than others for unknown reason. 
+            
+            <br> 7. By filtering out, each station tell a slightly different story.
+
+
+          </p> 
+          </div>
+
+
+        <script type='text/javascript'>                    var divElement = document.getElementById('viz1612583272224');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1016px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1014px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1016px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1014px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.minWidth='1016px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1550px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+
+<!-- </div> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
